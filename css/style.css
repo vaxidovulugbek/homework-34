@@ -304,6 +304,7 @@ body{
 }
 .questions{
   margin-top: 150px;
+  height: 700px;
 }
 .question-title{
   color: #242A45;
@@ -342,10 +343,25 @@ body{
 }
 .question-div{
   margin: 12px 0 4px 0;
+  cursor: pointer;
+}
+.question-div:hover .question-div-text{
+  color: #f60;
+}
+.question-div:hover .question-display{
+  display: block;
+}
+.question-div:hover .bx-chevron-down{
+  transform: rotate(-180deg);
+  transition: all 0.4s ease;
+  color: #FA5959;
 }
 .question-div-text{
   font-size: 18px;
   color: #242A45;
+}
+.question-display{
+  display: none;
 }
 .bx-chevron-down{
   font-size: 34px;
